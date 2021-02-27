@@ -7,7 +7,8 @@ export const Button = ({
     color = 'primary',
     size = 'medium',
     onClick = noop,
-    variant = 'contained'
+    variant = 'contained',
+    ...restProps
 }) => (
     <DefaultButton
         color={color}
@@ -15,6 +16,7 @@ export const Button = ({
         onClick={onClick}
         variant={variant}
         children={text}
+        {...restProps}
     />
 );
 

@@ -1,0 +1,39 @@
+.topBarWrapper {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.shareHighlight {
+    display: inline-flex;
+    font-size: 0.9rem;
+}
+
+.shareHighlight span {
+    margin-right: 5px;
+}
+
+.topBarWrapper > div {
+    padding: 0px 10px;
+}
+
+.topBarWrapper span[class*="-anchorOriginTopRightRectangle"] {
+    top: 10px;
+    left: 5px;
+}
+
+.yellow {
+    color: #ffb100;
+}
+
+.green {
+    color: #12ad12;
+}
+
+.white {
+    color: #fff;
+}
+
+.red {
+    color: #e01414;
+}

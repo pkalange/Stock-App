@@ -1,0 +1,51 @@
+.root {
+    flex-grow: 1;
+}
+
+.headerbar {
+    min-height: 48px !important;
+    background-color: #292929 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+.extraInfo {
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: -5px;
+    height: 100%;
+    background-color: #333;
+    margin-left: 10px;
+}
+
+.showInfo {
+    width: 77%;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    background-color: #312f2f;
+    margin-bottom: 5px;
+    text-align: center;
+    height: 90%;
+}
+
+.showIcons {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.showIcons button,
+.showIcons button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 0px 6px;
+    border-radius: 15px;
+    background-color: #292929;
+}
+
+@media screen and (max-width: 650px) {
+    .extraInfo {
+        display: none;
+    }
+}
