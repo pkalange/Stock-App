@@ -2,11 +2,14 @@
     display: inline-flex;
     width: 100%;
     justify-content: center;
+    border: 2px solid #424141;
+    border-radius: 0px 0px 10px 10px;
+    border-top: none;
 }
 
 .shareHighlight {
     display: inline-flex;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .shareHighlight span {
@@ -14,7 +17,7 @@
 }
 
 .topBarWrapper > div {
-    padding: 0px 10px;
+    padding: 5px 10px;
 }
 
 .topBarWrapper span[class*="-anchorOriginTopRightRectangle"] {
