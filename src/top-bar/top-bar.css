@@ -8,7 +8,7 @@
 }
 
 .shareHighlight {
-    display: inline-flex;
+    display: inline;
     font-size: 0.9rem;
 }
 
@@ -39,4 +39,10 @@
 
 .red {
     color: #e01414;
+}
+
+@media screen  and (min-width: 700px) and (max-width: 1023px) {
+    .shareHighlight {
+        font-size: 0.5rem;
+    }
 }

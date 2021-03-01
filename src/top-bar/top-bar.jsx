@@ -1,5 +1,8 @@
 import { Badge } from '@material-ui/core';
 import NotificationsIcon from '@material-ui/icons/Notifications';
+import { map } from 'lodash';
+
+import { data } from './data';
 
 import  './top-bar.css';
 
@@ -15,31 +18,17 @@ const ShareHighlightComp = props => (
 
 export const TopBar = () => (
     <div className='topBarWrapper'>
-        <ShareHighlightComp
-            title='NIFTY'
-            value='8711.55'
-            showGreen={true}
-            percent='0.98%'
-            inc='.82.15'
-        />
-        <ShareHighlightComp
-            title='NIFTY FUT'
-            value='8788.8'
-            showGreen={true}
-            percent='1.13%'
-            inc='.97.70'
-        />
-        <ShareHighlightComp
-            title='VIX'
-            value='20.16'
-            showGreen={false}
-            percent='-1.66%'
-            inc='.-0.34'
-        />
-        <ShareHighlightComp
-            title='VIX'
-            value='20.16'
-        />
+        {
+            map(data, item => (
+                <ShareHighlightComp
+                    title={item.title}
+                    value={item.value}
+                    showGreen={item.showGreen}
+                    percent={item.percent}
+                    inc={item.inc}
+                />
+            ))
+        }
         <Badge badgeContent={5} color="error">
             <NotificationsIcon fontSize='medium' />
         </Badge>

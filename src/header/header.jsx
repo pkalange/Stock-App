@@ -1,7 +1,9 @@
 import React from 'react';
+import { Badge } from '@material-ui/core';
 
 import { Button } from '../common-component';
-import { TopBar } from './top-bar';
+import { TopBar } from '../top-bar';
+import { NavMenu  } from '../nav-menu';
 
 import './header.css';
 
@@ -18,8 +20,7 @@ export const Header = () => {
                     <Button variant='outlined' size='small' text='-' />
                 </div>
             </div>
-            <div className="headerbar2">
-            </div>
+            <NavMenu />
             <div className='symbolIcon'>
                 heckyl
             </div>

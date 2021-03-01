@@ -57,8 +57,34 @@
     min-width: auto !important;
 }
 
-@media screen and (max-width: 650px) {
-    .headerbar {
-        display: none;
+@media screen and (max-width: 1024px) {
+    .showIcons {
+        margin-left: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .showIcons button,
+    .showIcons button:hover {
+        margin: 0px 2px;
+    }
+
+    .showInfo {
+        margin-right: 0;
+    }
+}
+
+@media screen  and (min-width: 700px) and (max-width: 1023px) {
+    .showIcons {
+        margin-left: 0.5rem;
+        margin-right: 5px;
+    }
+
+    .showIcons button,
+    .showIcons button:hover {
+        margin: 0px 2px;
+    }
+
+    .showInfo {
+        margin-right: 0;
     }
 }
